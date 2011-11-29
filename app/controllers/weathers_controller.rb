@@ -1,9 +1,9 @@
 class WeathersController < ApplicationController
- before_filter :allow_params_authentication!, :only => :index
+  before_filter :allow_params_authentication!, :only => :index
   # GET /weathers
   # GET /weathers.json
   def index
-    @user = authenticate_user!(:recall => "sessions#new")
+    @user = authenticate_user!(:recall => "weathers#intruder")
     @weathers = Weather.all
 
     respond_to do |format|
@@ -12,6 +12,8 @@ class WeathersController < ApplicationController
     end
   end
 
+  def intruder
+  end
   # GET /weathers/1
   # GET /weathers/1.json
   def show
