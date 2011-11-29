@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Tvapp::Application.config.secret_token = 'aa96469d94933fe49848dfe24ecc311aee3953e1388e757fb838fa45b5a1d47d536c0fbacae2411536397d8d0cd21073e831a95f68b11ad06aaa7e17923a5f4b'
+Tvapp::Application.config.secret_token = '95851019e7bb8a70802d33a117770946b27142013987674bef1fbefa6dfac69914dc87dc353cae6e5a9f9c7d59f39ed446e4fc9e6959fa2ae2fb9fea304ae30f'
